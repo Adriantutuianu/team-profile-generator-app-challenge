@@ -130,7 +130,7 @@ function promptMenu() {
       {
         type: "list",
         name: "menuOption",
-        message: "Choose an option:",
+        message: "Choose an option: (use arrows to select)",
         choices: [
           "Add an engineer",
           "Add an intern",
