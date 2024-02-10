@@ -153,4 +153,13 @@ function promptMenu() {
     });
 }
 
+function generateTeamHTML() {
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR);
+  }
+  fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+  console.log("Team HTML generated successfully:", outputPath);
+}
+
+//start by prompting the manager info
 promptManager();
