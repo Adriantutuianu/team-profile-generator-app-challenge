@@ -5,7 +5,7 @@ const generateTeam = (team) => {
     return `
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
               <div class="card employee-card">
-                  <div class="card-header">
+                  <div class="card-header card-header-manager">
                       <h2 class="card-title">${manager.getName()}</h2>
                       <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
                   </div>
@@ -26,7 +26,7 @@ const generateTeam = (team) => {
     return `
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
               <div class="card employee-card">
-                  <div class="card-header">
+                  <div class="card-header card-eng-int">
                       <h2 class="card-title">${engineer.getName()}</h2>
                       <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
                   </div>
@@ -47,7 +47,7 @@ const generateTeam = (team) => {
     return `
           <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
               <div class="card employee-card">
-                  <div class="card-header">
+                  <div class="card-header card-eng-int">
                       <h2 class="card-title">${intern.getName()}</h2>
                       <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
                   </div>
@@ -85,7 +85,7 @@ const generateTeam = (team) => {
   // Return the combined HTML
   return `
       <div class="row justify-content-center">
-          ${managerHtml}
+         ${managerHtml}
       </div>
       <div class="row">
           ${engineerHtml}

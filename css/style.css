@@ -1,3 +1,17 @@
+/* header style  */
+.team-heading {
+  background-color: #e5e1da;
+  border-bottom: 5px solid black;
+}
+
+.card-header-manager {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.card-eng-int {
+  background-color: darkcyan;
+}
 /* footer style */
 footer {
   display: flex;
