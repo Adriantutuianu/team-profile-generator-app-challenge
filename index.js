@@ -11,7 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 const teamMembers = [];
-
+//function to prompt team manager
 function promptManager() {
   console.log("Enter team manager's information:");
   inquirer
@@ -45,7 +45,42 @@ function promptManager() {
         answers.officeNumber
       );
       teamMembers.push(manager);
-      promptMenu();
+    });
+}
+//function to prompt engineer
+function promptEngineer() {
+  console.log("Enter engineer's information:");
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Engineer's name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Engineer's ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Engineer's email:",
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "Engineer's GitHub username:",
+      },
+    ])
+    .then((answers) => {
+      const engineer = new Engineer(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.github
+      );
+      teamMembers.push(engineer);
     });
 }
 
