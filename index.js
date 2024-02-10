@@ -84,4 +84,39 @@ function promptEngineer() {
     });
 }
 
-promptManager();
+function promptIntern() {
+  console.log("Enter intern's information:");
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "Intern's name:",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "Intern's ID:",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Intern's email:",
+      },
+      {
+        type: "input",
+        name: "school",
+        message: "Intern's school:",
+      },
+    ])
+    .then((answers) => {
+      const intern = new Intern(
+        answers.name,
+        answers.id,
+        answers.email,
+        answers.school
+      );
+      teamMembers.push(intern);
+    });
+}
+promptIntern();
