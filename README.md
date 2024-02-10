@@ -16,6 +16,12 @@ This command-line application generates HTML files based on input provided via a
 
 Here is the GitHub repository: https://github.com/Adriantutuianu/team-profile-generator-app-challenge
 
+## Technologies Used
+
+Node.js
+Jest (for unit testing)
+Inquirer (for collecting user input)
+
 ## Mock-Up
 
 For a visual representation of the generated HTML's appearance and functionality, refer to the provided mock-up.
