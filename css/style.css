@@ -9,8 +9,18 @@
   color: white;
 }
 
-.card-eng-int {
+.card-eng {
   background-color: darkcyan;
+  color: white;
+}
+
+.card-int {
+  background-color: darkslategray;
+  color: white;
+}
+
+.card-name {
+  border-bottom: 1px solid black;
 }
 /* footer style */
 footer {
