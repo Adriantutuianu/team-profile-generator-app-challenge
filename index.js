@@ -85,7 +85,7 @@ function promptEngineer() {
       promptMenu();
     });
 }
-
+//function to prompt intern
 function promptIntern() {
   console.log("Enter intern's information:");
   inquirer

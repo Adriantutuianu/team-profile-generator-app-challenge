@@ -120,6 +120,9 @@ module.exports = (team) => {
           <div class="container">
               ${generateTeam(team)}
           </div>
+          <footer>
+      <p class="footer-name">@ Adrian Tut 2024</p>
+          </footer>
       </body>
       </html>
     `;
