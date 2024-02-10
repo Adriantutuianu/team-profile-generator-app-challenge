@@ -18,9 +18,11 @@ Here is the GitHub repository: https://github.com/Adriantutuianu/team-profile-ge
 
 ## Technologies Used
 
-Node.js
-Jest (for unit testing)
-Inquirer (for collecting user input)
+#### Node.js
+
+#### Jest (for unit testing)
+
+#### Inquirer (for collecting user input)
 
 ## Mock-Up
 
