@@ -45,6 +45,7 @@ function promptManager() {
         answers.officeNumber
       );
       teamMembers.push(manager);
+      promptMenu();
     });
 }
 //function to prompt engineer
@@ -81,6 +82,7 @@ function promptEngineer() {
         answers.github
       );
       teamMembers.push(engineer);
+      promptMenu();
     });
 }
 
@@ -117,6 +119,38 @@ function promptIntern() {
         answers.school
       );
       teamMembers.push(intern);
+      promptMenu();
     });
 }
-promptIntern();
+
+function promptMenu() {
+  console.log("\nSelect an option:");
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "menuOption",
+        message: "Choose an option:",
+        choices: [
+          "Add an engineer",
+          "Add an intern",
+          "Finish building the team",
+        ],
+      },
+    ])
+    .then((answers) => {
+      switch (answers.menuOption) {
+        case "Add an engineer":
+          promptEngineer();
+          break;
+        case "Add an intern":
+          promptIntern();
+          break;
+        case "Finish building the team":
+          generateTeamHTML();
+          break;
+      }
+    });
+}
+
+promptManager();
