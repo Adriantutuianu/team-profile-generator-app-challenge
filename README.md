@@ -62,6 +62,10 @@ Answer the prompts to provide information about your staff.
 HTML Generated:
 Once all prompts are complete, the application will dynamically generate a team.html inside the folder /output in the project root.
 
+## Tests
+
+### ![Portfolio](./images/testing.png)
+
 ## Credits
 
 ### Project Contributors
